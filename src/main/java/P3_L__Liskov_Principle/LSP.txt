@@ -1,0 +1,10 @@
+https://reflectoring.io/lsp-explained/
+
+How to Identify LSP Violations?
+_______________________________
+Some good indicators to identify LSP violations are:
+
+1) Conditional logic (using the instanceof operator or object.getClass().getName()
+to identify the actual subclass) in client code
+2) Empty, do-nothing implementations of one or more methods in subclasses
+3) Throwing an UnsupportedOperationException or some other unexpected exception from a subclass method
